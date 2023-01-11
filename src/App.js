@@ -1,22 +1,23 @@
-import React from 'react'
-import "./App.css"
-import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
-import Header from './common/header/Header';
-import Home from './components/home/Home';
-import About from './components/home/about/About';
-import CourseHome from './components/home/allcourses/CourseHome';
-import Team from './components/home/team/Team';
-import Pricing from './components/home/pricing/Pricing';
-import Blog from './components/home/blog/Blog';
-import Contact from './components/home/contact/Contact';
-import Footer from './common/header/footer/Footer';
-
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./common/header/Header";
+import Home from "./components/home/Home";
+import About from "./components/home/about/About";
+import CourseHome from "./components/home/allcourses/CourseHome";
+import Team from "./components/home/team/Team";
+import Pricing from "./components/home/pricing/Pricing";
+import Blog from "./components/home/blog/Blog";
+import Contact from "./components/home/contact/Contact";
+import Footer from "./common/header/footer/Footer";
 
 const App = () => {
   return (
     <>
-    
-    <Router>
+      {/* <Header /> */}
+      <Home />
+      {/* <Footer /> */}
+      {/* <Router>
     <Header />
     <Routes>
     <Route exact path='/' element = {<Home />} />
@@ -31,9 +32,9 @@ const App = () => {
     <Footer />
     
    
-  </Router>
+  </Router> */}
     </>
-  )
-}
+  );
+};
 
 export default App;
